@@ -15,34 +15,43 @@
  *
  ******************************************************************************
  */
-
 #include <stdint.h>
-#include "../MCAL/RCC/rcc.h"
 #include <stdio.h>
-#include "../MCAL/GPIO/gpio.h"
-const RCCConfig_t SystemClockConfig = {
-.sysClkSource=HSI ,
-.AHBPrescaler = NO_DIV ,
-.APB1Prescaler= NO_DIV ,
-.MCO_OutSrc = Out_HSI ,
-.APB2Prescaler = NO_DIV
+
+#include "../Mcal/Dio/DIO_interface.h"
+#include "../Mcal/Port/PORT_interface.h"
+#include "../Mcal/RCC_new/RCC_interface.h"
+
+extern Port_ConfigType* PortCfg ;
+
+SystemClockConfig_t systemclockconfig ={
+		.sysClkSource=HSI,
+		.AHB_Prescaler=NO_DIV,
+		.APB1Prescaler=NO_DIV,
+		.APB2Prescaler=NO_DIV,
+		
 };
-const PinConfig_t Pin = {
-	.Pin =Pin_0,
-	.Port =Port_B,
-	.Mode=OUT_PUSH_PULL_10MHZ ,
-	.Direction =OUTPUT,
-	.State=SET
-};
+
+int z ;
+
 int main(void)
 {
-	vRCC_Init(&SystemClockConfig);
-	GPIO_Init(&Pin) ;
-	for (long long i=4 ; i>0 ; i--)
+	RCC_SystemClockConfig(&systemclockconfig) ;
+	RCC_EnablePeripheralClock(APB2, GPIOA | GPIOB | GPIOC) ;
+
+	Port_Init(PortCfg) ;
+
+
+
+	/* Some Initializations of PSP */
+
+	while (1)
 	{
-		GPIO_TogglePin(&Pin);
+
+
+
 	}
-	for(;;);
 }
+
 
 

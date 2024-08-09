@@ -1,0 +1,15 @@
+../Mcal/RCC_new/RCC_interface.c:35:6:RCC_SystemClockConfig	24	static
+../Mcal/RCC_new/RCC_interface.c:89:6:RCC_HSEConfig	16	static
+../Mcal/RCC_new/RCC_interface.c:109:6:RCC_HSIConfig	16	static
+../Mcal/RCC_new/RCC_interface.c:122:6:RCC_PLLConfig	24	static
+../Mcal/RCC_new/RCC_interface.c:153:6:RCC_SelectSysClockSource	24	static
+../Mcal/RCC_new/RCC_interface.c:170:6:RCC_EnablePeripheralClock	16	static
+../Mcal/RCC_new/RCC_interface.c:182:6:RCC_DisablePeripheralClock	16	static
+../Mcal/RCC_new/RCC_interface.c:189:6:RCC_SetUSBPrescaler	16	static
+../Mcal/RCC_new/RCC_interface.c:193:6:RCC_SetADCPrescaler	16	static
+../Mcal/RCC_new/RCC_interface.c:208:6:RCC_SetTrimval	16	static
+../Mcal/RCC_new/RCC_interface.c:219:6:RCC_EnableMCO	16	static
+../Mcal/RCC_new/RCC_interface.c:230:11:RCC_HSE_WaitReady	16	static,ignoring_inline_asm
+../Mcal/RCC_new/RCC_interface.c:243:11:RCC_PLL_WaitReady	16	static,ignoring_inline_asm
+../Mcal/RCC_new/RCC_interface.c:256:11:RCC_HSI_WaitReady	16	static,ignoring_inline_asm
+../Mcal/RCC_new/RCC_interface.c:270:26:RCC_Check_SystemClock	24	static,ignoring_inline_asm

@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -9,8 +9,14 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include common/Assert/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include Mcal/Systick/subdir.mk
+-include Mcal/RCC_new/subdir.mk
+-include Mcal/Port/subdir.mk
+-include Mcal/NVIC/subdir.mk
+-include Mcal/Dio/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -65,8 +71,8 @@ all: main-build
 main-build: BlueBill_Drivers.elf secondary-outputs
 
 # Tool invocations
-BlueBill_Drivers.elf BlueBill_Drivers.map: $(OBJS) $(USER_OBJS) E:\STM_Workspace\BlueBill_Drivers\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BlueBill_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\STM_Workspace\BlueBill_Drivers\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlueBill_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BlueBill_Drivers.elf BlueBill_Drivers.map: $(OBJS) $(USER_OBJS) /home/abokhalil/Desktop/BlueBill_Drivers/STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BlueBill_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/abokhalil/Desktop/BlueBill_Drivers/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlueBill_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

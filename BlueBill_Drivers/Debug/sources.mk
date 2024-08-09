@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 ELF_SRCS := 
@@ -24,6 +24,12 @@ OBJCOPY_BIN :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Mcal/Dio \
+Mcal/NVIC \
+Mcal/Port \
+Mcal/RCC_new \
+Mcal/Systick \
 Src \
 Startup \
+common/Assert \
 

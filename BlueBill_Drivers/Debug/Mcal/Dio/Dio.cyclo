@@ -1,0 +1,5 @@
+../Mcal/Dio/Dio.c:46:28:Get_Channel_Direction	9
+../Mcal/Dio/Dio.c:93:15:Dio_ReadChannel	8
+../Mcal/Dio/Dio.c:135:16:Dio_WriteChannel	6
+../Mcal/Dio/Dio.c:170:16:Dio_FlipChannel	3
+../Mcal/Dio/Dio.c:199:16:Dio_WriteChannelAtomic	3

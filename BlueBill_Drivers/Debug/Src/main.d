@@ -1,14 +1,32 @@
-Src/main.o: ../Src/main.c ../Src/../MCAL/RCC/rcc.h \
- ../Src/../MCAL/RCC/rcc_cnfig.h ../Inc/../utilities/std_types.h \
- ../Src/../MCAL/RCC/rcc_private.h \
- ../Src/../MCAL/RCC/../../utilities/std_types.h \
- ../Src/../MCAL/GPIO/gpio.h ../Src/../MCAL/GPIO/gpio_private.h \
- ../Src/../MCAL/GPIO/gpio_cnfig.h
-../Src/../MCAL/RCC/rcc.h:
-../Src/../MCAL/RCC/rcc_cnfig.h:
-../Inc/../utilities/std_types.h:
-../Src/../MCAL/RCC/rcc_private.h:
-../Src/../MCAL/RCC/../../utilities/std_types.h:
-../Src/../MCAL/GPIO/gpio.h:
-../Src/../MCAL/GPIO/gpio_private.h:
-../Src/../MCAL/GPIO/gpio_cnfig.h:
+Src/main.o: ../Src/main.c ../Src/../Mcal/Dio/DIO_interface.h \
+ ../Src/../Mcal/Dio/../../common/Std_Types.h \
+ ../Src/../Mcal/Dio/../../common/stm32f103c8t6.h \
+ ../Src/../Mcal/Dio/DIO_private.h \
+ ../Src/../Mcal/Dio/../../common/Mcu_Hw.h ../Src/../Mcal/Dio/DIO_types.h \
+ ../Src/../Mcal/Port/PORT_interface.h \
+ ../Src/../Mcal/Port/../../common/compiler.h \
+ ../Src/../Mcal/Port/PORT_config.h \
+ ../Src/../Mcal/Port/../../common/Std_Types.h \
+ ../Src/../Mcal/Port/PORT_types.h ../Src/../Mcal/Port/PORT_Private.h \
+ ../Src/../Mcal/Port/../../common/stm32f103c8t6.h \
+ ../Src/../Mcal/RCC_new/RCC_interface.h \
+ ../Src/../Mcal/RCC_new/RCC_private.h \
+ ../Src/../Mcal/RCC_new/../../common/Std_Types.h \
+ ../Src/../Mcal/RCC_new/../../common/stm32f103c8t6.h
+../Src/../Mcal/Dio/DIO_interface.h:
+../Src/../Mcal/Dio/../../common/Std_Types.h:
+../Src/../Mcal/Dio/../../common/stm32f103c8t6.h:
+../Src/../Mcal/Dio/DIO_private.h:
+../Src/../Mcal/Dio/../../common/Mcu_Hw.h:
+../Src/../Mcal/Dio/DIO_types.h:
+../Src/../Mcal/Port/PORT_interface.h:
+../Src/../Mcal/Port/../../common/compiler.h:
+../Src/../Mcal/Port/PORT_config.h:
+../Src/../Mcal/Port/../../common/Std_Types.h:
+../Src/../Mcal/Port/PORT_types.h:
+../Src/../Mcal/Port/PORT_Private.h:
+../Src/../Mcal/Port/../../common/stm32f103c8t6.h:
+../Src/../Mcal/RCC_new/RCC_interface.h:
+../Src/../Mcal/RCC_new/RCC_private.h:
+../Src/../Mcal/RCC_new/../../common/Std_Types.h:
+../Src/../Mcal/RCC_new/../../common/stm32f103c8t6.h:

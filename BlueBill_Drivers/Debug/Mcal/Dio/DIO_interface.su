@@ -1,0 +1,5 @@
+../Mcal/Dio/DIO_interface.c:46:28:Get_Channel_Direction	24	static
+../Mcal/Dio/DIO_interface.c:97:15:Dio_ReadChannel	24	static
+../Mcal/Dio/DIO_interface.c:139:16:Dio_WriteChannel	24	static
+../Mcal/Dio/DIO_interface.c:174:16:Dio_FlipChannel	24	static
+../Mcal/Dio/DIO_interface.c:203:16:Dio_WriteChannelAtomic	24	static

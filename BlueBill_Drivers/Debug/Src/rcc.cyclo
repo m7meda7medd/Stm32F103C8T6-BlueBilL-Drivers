@@ -1,8 +1,0 @@
-../Src/rcc.c:31:13:vRCC_SetHSI	1
-../Src/rcc.c:78:6:vRCC_Init	1
-../Src/rcc.c:107:6:vRCC_SetSystemClock	28
-../Src/rcc.c:205:6:vRCC_EnablePeripheralClock	5
-../Src/rcc.c:230:6:vRCC_DisablePeripheralClock	5
-../Src/rcc.c:255:20:vRCC_WaitForHSIStable	2
-../Src/rcc.c:269:6:vRCC_EnableMCO	5
-../Src/rcc.c:301:6:vRCC_ResetPeripheral	3

@@ -1,0 +1,15 @@
+../Mcal/RCC_new/RCC_interface.c:35:6:RCC_SystemClockConfig	11
+../Mcal/RCC_new/RCC_interface.c:89:6:RCC_HSEConfig	4
+../Mcal/RCC_new/RCC_interface.c:109:6:RCC_HSIConfig	3
+../Mcal/RCC_new/RCC_interface.c:122:6:RCC_PLLConfig	4
+../Mcal/RCC_new/RCC_interface.c:153:6:RCC_SelectSysClockSource	3
+../Mcal/RCC_new/RCC_interface.c:170:6:RCC_EnablePeripheralClock	2
+../Mcal/RCC_new/RCC_interface.c:182:6:RCC_DisablePeripheralClock	1
+../Mcal/RCC_new/RCC_interface.c:189:6:RCC_SetUSBPrescaler	2
+../Mcal/RCC_new/RCC_interface.c:193:6:RCC_SetADCPrescaler	1
+../Mcal/RCC_new/RCC_interface.c:208:6:RCC_SetTrimval	2
+../Mcal/RCC_new/RCC_interface.c:219:6:RCC_EnableMCO	3
+../Mcal/RCC_new/RCC_interface.c:230:11:RCC_HSE_WaitReady	4
+../Mcal/RCC_new/RCC_interface.c:243:11:RCC_PLL_WaitReady	4
+../Mcal/RCC_new/RCC_interface.c:256:11:RCC_HSI_WaitReady	4
+../Mcal/RCC_new/RCC_interface.c:270:26:RCC_Check_SystemClock	5

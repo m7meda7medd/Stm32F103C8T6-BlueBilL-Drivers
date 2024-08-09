@@ -1,4 +1,0 @@
-../Src/gpio.c:31:14:GPIO_Init	24	static
-../Src/gpio.c:127:15:GPIO_ReadPin	24	static
-../Src/gpio.c:171:14:GPIO_SetPinValue	24	static
-../Src/gpio.c:219:14:GPIO_TogglePin	24	static
