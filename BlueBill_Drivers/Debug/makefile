@@ -71,8 +71,8 @@ all: main-build
 main-build: BlueBill_Drivers.elf secondary-outputs
 
 # Tool invocations
-BlueBill_Drivers.elf BlueBill_Drivers.map: $(OBJS) $(USER_OBJS) /home/abokhalil/Desktop/BlueBill_Drivers/STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BlueBill_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/abokhalil/Desktop/BlueBill_Drivers/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlueBill_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BlueBill_Drivers.elf BlueBill_Drivers.map: $(OBJS) $(USER_OBJS) /home/abokhalil/Desktop/Stm32F103C8T6-BlueBilL-Drivers/BlueBill_Drivers/STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BlueBill_Drivers.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/abokhalil/Desktop/Stm32F103C8T6-BlueBilL-Drivers/BlueBill_Drivers/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlueBill_Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

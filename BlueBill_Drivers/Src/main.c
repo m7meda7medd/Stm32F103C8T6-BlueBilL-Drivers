@@ -21,8 +21,8 @@
 #include "../Mcal/Dio/DIO_interface.h"
 #include "../Mcal/Port/PORT_interface.h"
 #include "../Mcal/RCC_new/RCC_interface.h"
-
-extern Port_ConfigType* PortCfg ;
+#include "../Mcal/NVIC/NVIC_interface.h"
+extern Port_ConfigType PortCfg[PREDEF_USED_PINS] ;
 
 SystemClockConfig_t systemclockconfig ={
 		.sysClkSource=HSI,
@@ -32,15 +32,15 @@ SystemClockConfig_t systemclockconfig ={
 		
 };
 
-int z ;
 
 int main(void)
 {
 	RCC_SystemClockConfig(&systemclockconfig) ;
-	RCC_EnablePeripheralClock(APB2, GPIOA | GPIOB | GPIOC) ;
-
+	RCC_EnablePeripheralClock(APB2, GPIOA | GPIOB | GPIOC | USART1) ;
 	Port_Init(PortCfg) ;
-
+	Dio_WriteChannel(DIO_C13, STD_LOW) ;
+	NVIC_EnableIRQ(USART1_IRQ) ;
+	NVIC_SetPendingIRQ(USART1_IRQ) ;
 
 
 	/* Some Initializations of PSP */
@@ -48,10 +48,13 @@ int main(void)
 	while (1)
 	{
 
-
+	Dio_WriteChannel(DIO_C13, STD_HIGH) ;
 
 	}
 }
 
+void USART1_IRQHandler (void){
 
+Dio_WriteChannel(DIO_C13, STD_LOW) ;
+}
 

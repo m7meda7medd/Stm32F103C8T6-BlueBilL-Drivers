@@ -1,0 +1,6 @@
+../Mcal/NVIC/NVIC_interface.c:34:6:NVIC_EnableIRQ	24	static
+../Mcal/NVIC/NVIC_interface.c:45:6:NVIC_DisableIRQ	24	static
+../Mcal/NVIC/NVIC_interface.c:61:6:NVIC_SetPendingIRQ	24	static
+../Mcal/NVIC/NVIC_interface.c:71:6:NVIC_ClearPendingIRQ	24	static
+../Mcal/NVIC/NVIC_interface.c:81:4:NVIC_GetPendingIRQ	24	static
+../Mcal/NVIC/NVIC_interface.c:91:4:NVIC_GetActive	24	static

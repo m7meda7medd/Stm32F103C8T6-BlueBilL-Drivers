@@ -20,7 +20,7 @@
 /**********************************************************************************************************************
  *  LOCAL DATA
  *********************************************************************************************************************/
-static volatile GPIO_t* DIO_PortArr[PORTS_COUNT] = {(DIO_GPIOA),(DIO_GPIOB),(DIO_GPIOA)} ;
+static volatile GPIO_t* DIO_PortArr[PORTS_COUNT] = {(DIO_GPIOA),(DIO_GPIOB),(DIO_GPIOC)} ;
 /**********************************************************************************************************************
  *  GLOBAL DATA
  *********************************************************************************************************************/
@@ -160,6 +160,8 @@ Std_ReturnType Dio_WriteChannel(Dio_ChannelType ChannelId , Dio_LevelType Level)
 		 }
 return ret ;
 }
+ u8 ret = 1 & (Reg >> pin ) ;
+ u8 ret = ((1<< pin ) & Reg) >> pin
 /******************************************************************************
 * \Syntax          : Std_ReturnType Dio_FlipChannel(Dio_ChannelType ChannelId)
 * \Description     : Flips The Level of a channel
